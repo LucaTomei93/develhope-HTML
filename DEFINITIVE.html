@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>HTML Lesson</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form action="registration_page.php">
+      <!-- l'action è una pagina server scritta a caso-->
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" placeholder="mariorossi@gmail.com" required>
+      <br>
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password" placeholder="Choose your own password" required>
+      <br>
+      <label for="full_name">Name and Lastname:</label>
+      <input type="text" name="full_name" id="full_name" placeholder="Mario Rossi" required>
+      <br>
+      <label for="birth_date">Date of birth:</label>
+      <input type="date" name="birth_date" id="birth_date" required>
+      <br>
+      <label for="mobile">Telephone number:</label>
+      <input type="tel" name="mobile" id="mobile" placeholder="333-333-3333" required>
+      <br>
+      <label for="plan">Choose one of our plan:</label>
+      <select name="plan" id="plan" required>
+        <option value="free_plan">Our FREE plan!</option>
+        <optgroup label="Group of 3 with increasing price:">
+          <option value="">Plan 1: € 10.00</option>
+          <option value="">Plan 2: € 12.00</option>
+          <option value="">Plan 3: € 15.00</option>
+        </optgroup>
+      </select>
+      <label for="pro_plan">Sign for our PRO Plan! </label>
+      <input type="checkbox" name="pro_plan" value="pro_signed" required>
+      <label for="credit_card">Credit Card Number</label>
+      <input type="text" name="credit_card" id="credit_card" maxlength="19" placeholder="1111-2222-3333-4444" required>
+      <br>
+      <label for="cvc">CVC:</label>
+      <input type="text" name="cvc" id="cvc" maxlength="3" placeholder="123" required>
+      <br>
+      <label for="exp_date">Expiration Date:</label>
+      <input type="text" name="exp_date" maxlength="2" placeholder="MM" required>
+      <input type="text" name="exp_date" maxlength="4" placeholder="YYYY" required>
+      <label for="address">Billing Address:</label>
+      <select name="address" id="address" required>
+        <option value="via">Via</option>
+        <option value="piazza">Piazza</option>
+        <option value="corso">Corso</option>
+        <option value="viale">Viale</option>
+      </select>
+      <input type="text" name="address" placeholder="Corrado IV" required>
+      <br>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
+
